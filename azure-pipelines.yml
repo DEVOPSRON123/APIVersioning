@@ -28,11 +28,10 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-
 - task: AzureRmWebAppDeployment@5
   inputs:
     ConnectionType: 'AzureRM'
-    azureSubscription: 'Azure subscription 1(c84c0992-b498-498f-a04a-f06536f1a580)'
+    azureSubscription: 'Subscription as you go(0b36dde4-8ae0-4a94-bc10-5cd429690dc9)'
     appType: 'webApp'
-    WebAppName: 'mywebappron'
+    WebAppName: 'apiversioning'
     packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
